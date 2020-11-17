@@ -79,7 +79,7 @@ import org.openqa.selenium.support.FindBy;
 /**
  * The nuxeo main document base page
  *
- * @author Sun Seng David TAN <stan@nuxeo.com>
+ * @author Sun Seng David TAN
  */
 public class DocumentBasePage extends AbstractPage {
 

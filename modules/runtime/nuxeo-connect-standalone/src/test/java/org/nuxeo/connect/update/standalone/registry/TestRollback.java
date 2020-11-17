@@ -468,7 +468,8 @@ public class TestRollback extends SharedFilesTest {
      * <li>Install HF, install addon, uninstall HF, uninstall addon
      * <li>Install HF, install addon, uninstall addon
      * </ol>
-     * The JAR hoftix version must be installed disregarding the install order between HF and addon.<br/>
+     * The JAR hoftix version must be installed disregarding the install order between HF and addon.
+     * <p>
      * No JAR version must be installed when addon is not installed.
      */
     @Test
@@ -523,7 +524,8 @@ public class TestRollback extends SharedFilesTest {
      * <li>Install HF, install addon, uninstall HF, uninstall addon
      * <li>Install HF, install addon, uninstall addon
      * </ol>
-     * The JAR hoftix version must be installed disregarding the install order between HF and addon.<br/>
+     * The JAR hoftix version must be installed disregarding the install order between HF and addon.
+     * <p>
      * No JAR version must be installed when addon is not installed.
      */
     @Test
@@ -574,7 +576,8 @@ public class TestRollback extends SharedFilesTest {
      * <li>Install HF, install addon, uninstall HF, uninstall addon
      * <li>Install HF, install addon, uninstall addon
      * </ol>
-     * The JAR hoftix version must be installed disregarding the install order between HF and addon.<br/>
+     * The JAR hoftix version must be installed disregarding the install order between HF and addon.
+     * <p>
      * No JAR version must be installed when addon is not installed.
      */
     @Test
@@ -629,7 +632,8 @@ public class TestRollback extends SharedFilesTest {
      * <li>Install HF, install addon, uninstall HF, uninstall addon
      * <li>Install HF, install addon, uninstall addon
      * </ol>
-     * The JAR hoftix version must be installed disregarding the install order between HF and addon.<br/>
+     * The JAR hoftix version must be installed disregarding the install order between HF and addon.
+     * <p>
      * No JAR version must be installed when addon is not installed.
      */
     @Test
@@ -678,7 +682,8 @@ public class TestRollback extends SharedFilesTest {
      * <ol>
      * <li>Install addon, install HF1, install HF2, uninstall HF2, uninstall addon
      * </ol>
-     * The JAR hoftix version must be installed disregarding the install order between HF and addon.<br/>
+     * The JAR hoftix version must be installed disregarding the install order between HF and addon.
+     * <p>
      * No JAR version must be installed when addon is not installed.
      */
     @Test

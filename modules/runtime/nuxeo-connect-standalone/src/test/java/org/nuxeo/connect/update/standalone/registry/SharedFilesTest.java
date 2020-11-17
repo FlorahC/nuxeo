@@ -42,7 +42,8 @@ import org.nuxeo.connect.update.xml.XmlWriter;
  * </ul>
  * First we install pkg1, then pkg2 => expect pkg2 is not really copying the shared but it updates the shared.files
  * registry adding a new reference to that JAR (we will use different content for these files to be able to track the
- * file that was really copied). Also, we expect that lib1.jar and lib2.jar were copied.<br/>
+ * file that was really copied). Also, we expect that lib1.jar and lib2.jar were copied.
+ * <p>
  * Then we uninstall pkg1 and we expect that shared is not removed (and the JAR is the one installed by pkg1). But
  * lib2.jar must be removed. Then we uninstall pkg2 and we expect all the 3 files were removed.
  *

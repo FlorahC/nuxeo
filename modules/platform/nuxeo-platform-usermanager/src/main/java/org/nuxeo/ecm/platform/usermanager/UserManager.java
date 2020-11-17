@@ -37,8 +37,8 @@ import org.nuxeo.runtime.services.event.EventListener;
 
 /**
  * @author Anahide Tchertchian
- * @author Sun Seng David TAN <stan@nuxeo.com>
- * @author Benjamin Jalon <bjalon@nuxeo.com>
+ * @author Sun Seng David TAN
+ * @author Benjamin Jalon
  */
 public interface UserManager extends Authenticator, EventListener, Serializable {
 

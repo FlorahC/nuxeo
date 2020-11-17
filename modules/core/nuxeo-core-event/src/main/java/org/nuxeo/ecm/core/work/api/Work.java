@@ -52,12 +52,12 @@ public interface Work extends Serializable {
      * <p>
      * The following transitions between states are possible:
      * <ul>
-     * <li>UNKNOWN -> SCHEDULED</li> (unknown from the manager point of view)
-     * <li>SCHEDULED -> CANCELED (is never scheduled or run)
-     * <li>SCHEDULED -> RUNNING
-     * <li>RUNNING -> COMPLETED
-     * <li>RUNNING -> FAILED
-     * <li>RUNNING -> SCHEDULED (is suspended and persisted)
+     * <li>UNKNOWN -&gt; SCHEDULED (unknown from the manager point of view)
+     * <li>SCHEDULED -&gt; CANCELED (is never scheduled or run)
+     * <li>SCHEDULED -&gt; RUNNING
+     * <li>RUNNING -&gt; COMPLETED
+     * <li>RUNNING -&gt; FAILED
+     * <li>RUNNING -&gt; SCHEDULED (is suspended and persisted)
      * </ul>
      */
     enum State {
