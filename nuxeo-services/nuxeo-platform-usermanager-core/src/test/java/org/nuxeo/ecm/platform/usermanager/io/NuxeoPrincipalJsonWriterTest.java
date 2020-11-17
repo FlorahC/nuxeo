@@ -88,4 +88,32 @@ public class NuxeoPrincipalJsonWriterTest extends
         exGroup.has("url").isEquals("group/administrators");
     }
 
+    @Test
+    public void testPartialUser() throws Exception {
+        NuxeoPrincipal principal = userManager.getPrincipal("Administrator");
+
+        //Get principal without fetching references
+        NuxeoPrincipal partialPrincipal = userManager.getPrincipal(principal.getName(),false);
+        JsonAssert json = jsonAssert(partialPrincipal);
+
+        //Check the 'isPartial' flag is added
+        json.has("isPartial").isTrue();
+        json.properties(7);
+        json.has("entity-type").isEquals("user");
+        json.has("id").isEquals("Administrator");
+
+        //Check the 'isAdministrator' is false
+        json.has("isAdministrator").isFalse();
+        json.has("isAnonymous").isFalse();
+        JsonAssert model = json.has("properties").properties(7);
+        model.has("lastName").isEmptyStringOrNull();
+        model.has("username").isEquals("Administrator");
+        model.has("email").isEquals("devnull@nuxeo.com");
+        model.has("company").isEmptyStringOrNull();
+        model.has("firstName").isEmptyStringOrNull();
+
+        //Check the groups are empty
+        model.has("groups").length(0);
+    }
+
 }
